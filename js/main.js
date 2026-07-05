@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   pintarCatalogo();
   pintarFAQ();
   configurarWhatsapp();
+  inicializarDemos();
 });
 
 function pintarCatalogo(){
