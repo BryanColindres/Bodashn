@@ -106,3 +106,24 @@ img{display:block;max-width:100%}
   .telefonos-wrap{height:300px}
   .telefono{width:130px;height:270px}
 }
+
+
+.telefono{position:relative;overflow:hidden}
+.telefono::after{
+content:"▶ Ver demo";
+position:absolute;
+left:50%;
+bottom:14px;
+transform:translateX(-50%);
+background:rgba(0,0,0,.65);
+color:#fff;
+padding:6px 12px;
+border-radius:20px;
+font-size:.75rem;
+opacity:0;
+transition:.3s;
+pointer-events:none;
+z-index:20;
+}
+.telefono:hover::after{opacity:1}
+.telefono:hover iframe{filter:brightness(.92)}
